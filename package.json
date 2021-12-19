@@ -11,6 +11,7 @@
   "keywords": [],
   "scripts": {
     "start": "npx ts-node -r dotenv/config src/index.ts | pino-pretty",
+    "log": "npx ts-node -r dotenv/config src/index.ts | pino-pretty > output.log",
     "test": "jest test --coverage",
     "lint": "gts lint",
     "clean": "gts clean",
@@ -22,8 +23,10 @@
   },
   "devDependencies": {
     "@types/jest": "^27.0.3",
+    "@types/lodash": "^4.14.178",
     "@types/node": "^14.11.2",
     "@types/pino": "^7.0.5",
+    "@types/ramda": "^0.27.60",
     "gts": "^3.1.0",
     "jest": "^27.4.5",
     "ts-jest": "^27.1.2",
@@ -32,6 +35,7 @@
   "dependencies": {
     "dotenv": "^10.0.0",
     "lodash": "^4.17.21",
-    "pino": "^7.5.1"
+    "pino": "^7.5.1",
+    "ramda": "^0.27.1"
   }
 }
