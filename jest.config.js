@@ -3,5 +3,5 @@ module.exports = {
   testEnvironment: 'node',
   testPathIgnorePatterns: ['<rootDir>/build/', '<rootDir>/node_modules/'],
   collectCoverage: true,
-  collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
+  collectCoverageFrom: ['<rootDir>/src/**/*.ts', '!<rootDir>/src/**/index.ts'],
 };
